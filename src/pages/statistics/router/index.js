@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-
+const Home = resolve => require(['../component/home'], resolve)
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+let url = window.location.pathname;
+let bashuri = '';
+
+bashuri = url;
+
+const router = new Router({
+    routes: [{
+            path: '/',
+            name: 'Home',
+            component: Home
+        },
+
+
+    ]
 })
+
+
+export default router;
