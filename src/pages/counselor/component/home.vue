@@ -1,12 +1,19 @@
 
 <template>
 	<div class="home" >
-		{{count}}
-		counselorhome
+		<section>home页</section>
+		<section> counselor页中vuex  store/modules/subComponentState 中的值：{{count}} </section>
 		<button @click="gotoVuexDemo" >gotoVuexDemo</button>
 	</div>
 </template>
 <style scoped>
+.home section{
+	font-size: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+}
 </style>
 
 <script>

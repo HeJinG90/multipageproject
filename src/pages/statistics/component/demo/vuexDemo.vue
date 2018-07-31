@@ -1,9 +1,9 @@
 <template>
   <div >
-    <p class="demo">counselor页中vuex  store/modules/subComponentState 中的值：{{count}}</p>
+    <p class="demo">statistics 页中vuex  store/modules/subComponentState 中的值：{{flag}}</p>
   <p>
-    <button @click="MUTATIONNUMADD(10)">使用mutations的方法做自加</button>
-    <button @click="actionNumAdd">使用action的方法做自加</button>
+    <button @click="MUTATIONNUMADD(true)">使用mutations的方法改值</button>
+    <button @click="actionNumAdd">使用action的方法改值</button>
   </p>
   </div>
 </template>      
@@ -18,7 +18,7 @@ export default {
   },
   computed:{
      ...mapState('subComponentState',{  //带命名空间的  第一个参数传进去
-        count :'count' //相当于this.$store.state.subComponentState.count;  
+        flag :'flag' //相当于this.$store.state.subComponentState.count;  
       }),
   },
   methods: {
@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 .demo {
-	  font-size: 0.3rem;
+	font-size: 0.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
