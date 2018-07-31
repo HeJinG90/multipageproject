@@ -1,0 +1,1 @@
+export const MUTATIONNUMADD = 'MUTATIONNUMADD' // 数字增加
