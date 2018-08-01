@@ -5,6 +5,7 @@
     <button @click="MUTATIONNUMADD(10)">使用mutations的方法做自加</button>
     <button @click="actionNumAdd">使用action的方法做自加</button>
   </p>
+  <a href='statistics.html'>跳转到statistics页</a>
   </div>
 </template>      
 

@@ -4,6 +4,7 @@
 		<section>home页</section>
 		<section> counselor页中vuex  store/modules/subComponentState 中的值：{{count}} </section>
 		<button @click="gotoVuexDemo" >gotoVuexDemo</button>
+		<a href='statistics.html'>跳转到statistics页</a>
 	</div>
 </template>
 <style scoped>
@@ -24,7 +25,7 @@ import { mapState , mapActions ,mapGetters ,mapMutations  } from 'vuex'
 			}
 		},
 		created:function(){
-			
+			window.sessionStorage.setItem("commonData","共享数据");
 			
 		},
 		computed:{

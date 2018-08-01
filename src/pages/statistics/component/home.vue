@@ -4,6 +4,7 @@
 		<section>home页</section>
 		<section>  statistics 页中vuex  store/modules/subComponentState 中的值：{{flag}}</section>
 		<button @click="gotoVuexDemo" >gotoVuexDemo</button>
+		<a href='counselor.html'>跳转到counselor页</a>
 	</div>
 </template>
 <style scoped>
@@ -25,7 +26,7 @@ import { mapState , mapActions ,mapGetters ,mapMutations  } from 'vuex'
 		},
 		created:function(){
 			
-			
+			alert(window.sessionStorage.getItem("commonData"));
 		},
 		computed:{
 			...mapState('subComponentState',{  //带命名空间的  第一个参数传进去

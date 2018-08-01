@@ -14,6 +14,5 @@ export default {
 #app {
   font-size: 0.3rem;
   background-color: #F0F3F8;
-  overflow-y: hidden;
 }
 </style>

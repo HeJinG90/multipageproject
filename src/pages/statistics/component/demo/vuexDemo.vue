@@ -5,6 +5,7 @@
     <button @click="MUTATIONNUMADD(true)">使用mutations的方法改值</button>
     <button @click="actionNumAdd">使用action的方法改值</button>
   </p>
+  <a href='counselor.html'>跳转到counselor页</a>
   </div>
 </template>      
 
