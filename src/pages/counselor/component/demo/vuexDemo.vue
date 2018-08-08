@@ -29,7 +29,10 @@ export default {
       ...mapActions('subComponentState',{
          actionNumAdd : 'actionNumAdd'  //相当于this.$store.dispatch('subComponentState/actionNumAdd')
        }),
-  }
+  },
+  metaInfo: {
+			title: "vuexDemo",
+		},
 
   };
 </script>

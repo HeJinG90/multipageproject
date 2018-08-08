@@ -38,7 +38,10 @@ import { mapState , mapActions ,mapGetters ,mapMutations  } from 'vuex'
 				let _this = this;
 				this.$router.push({name:"VuexDemo"})
 			}
-		}
+		},
+		metaInfo: {
+			title: "home",
+		},
 
 	}
 </script>
