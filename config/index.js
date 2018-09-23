@@ -10,7 +10,15 @@ module.exports = {
         // Paths
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
-        proxyTable: {},
+        proxyTable: {
+            // '/proxy': {
+            //     target: 'http://moby.xbotech.com/',
+            //     changeOrigin: true,
+            //     pathRewrite: {
+            //         '^/proxy': '/'
+            //     }
+            // }
+        },
 
         // Various Dev Server settings
         host: 'localhost', // can be overwritten by process.env.HOST
